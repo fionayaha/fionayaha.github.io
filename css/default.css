@@ -1,0 +1,692 @@
+@charset "UTF-8";
+
+/*Base on Eric Meyer Css Reset  */
+/**
+ * Initialization all html tag default value
+ */
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* Initialization tag
+   ========================================================================== */
+/**
+ * HTML5 display-role reset for older browsers
+ */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * setting page default font siez
+ * font-size: 62.5%; -->  10 ÷ 16 × 100% = 62.5%
+ */
+html {
+  font-size: 62.5%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-size: 13px;
+  font-size: 1.3rem;
+  color: #000;
+  line-height: 1.6;
+  font-style: normal;
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Inconsolata', monospace;
+}
+@media (min-width: 640px) {
+  body {
+    font-size: 15px;
+    font-size: 1.5rem;
+  }
+}
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  height: 0;
+}
+
+/* Embedded content
+   ========================================================================== */
+img, embed, object {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+input, select {
+  vertical-align: middle;
+}
+
+input, button, textarea, select, optgroup, option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+button, input, optgroup, select, textarea {
+  margin: 0;
+}
+
+input[type="submit"], input[type="radio"], input[type="checkbox"], input[type="button"], input[type="reset"] {
+  cursor: pointer;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  padding: 0;
+}
+
+button, select {
+  cursor: pointer;
+}
+
+/* Links
+   ========================================================================== */
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+a:active, a:hover {
+  outline: 0;
+}
+
+/* lists
+   ========================================================================== */
+/**
+ * clear ol, ul list style
+ */
+ul, ol {
+  list-style: none;
+}
+
+/* box-sizing
+   ========================================================================== */
+/**
+ * clear all box-sizing setting
+ */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 990px) {
+  .container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+/* Button core
+   ========================================================================== */
+.btn {
+  display: inline-block;
+  zoom: 1;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* Button Style 
+   below border color background padding etc can custom
+   ========================================================================== */
+.btn {
+  border: 1px solid;
+  border-color: transparent;
+  padding: 10px 30px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  letter-spacing: 1px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn--primary{
+  color: #000;
+  border: 1px solid #eee;
+}
+.btn--primary:hover {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background: #eee;
+}
+
+
+/**
+ * etmall site glonall css setting
+ */
+.l-left {
+  float: left;
+}
+
+.l-right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.context-block {
+  display: block;
+  overflow: hidden;
+}
+
+.section {
+  *zoom: 1;
+  padding: 10% 2%;
+}
+@media (min-width: 990px) {
+  .section {
+    padding: 4%;
+  }
+}
+section{ 
+  *zoom: 1;
+}
+section:after, section:before {
+  content: "";
+  display: block;
+}
+section:after {
+  clear: both;
+}
+.txt {
+  margin: 8px 0;
+}
+.txt_center{
+  text-align: center;
+}
+main{
+  margin-top: 47px;
+}
+
+/**
+ * etmall full site about css setting
+ */
+.section_about{
+  display: block;
+  box-sizing: border-box;
+  height: 600px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background: #FFF;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: auto 30%;
+}
+.section_about:nth-child(even) {
+  background-color: #f3f3f3;
+}
+.about{
+  position: relative;
+  width:100%;
+  top:50%;
+  /* padding: 10%; */
+  transform:translateY(-50%);
+}
+.about__tit {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.about__sub {
+  margin-top: 30px;
+}
+.about__skills{
+  max-width: 640px;
+  margin: 0 auto;
+}
+.about__skills li {
+  margin-top: 10px;
+}
+.about__skills li:first-child {
+  margin-top: 30px;
+}
+.about span{
+  text-transform:uppercase;
+}
+.about__btn{
+  margin-top: 30px;
+}
+.about__btn a{
+  font-size: 16px;
+  font-size: 2.5rem;
+  color: #000;
+  border-bottom: 1px solid black;
+}
+.about__btn a:hover{
+  color: #fff;
+  background: #000;
+}
+.about_end{
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 3%;
+  font-size: 1.5rem;
+}
+.about_end a{
+  background: #000;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  padding: 0 3px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.about_end a:hover{
+  background: #fff;
+  color: #000;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+/**
+ * etmall full site ui css setting
+ */
+.ui__desk img, .ui__phone img {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.ui__desk img:hover, .ui__phone img:hover {
+  opacity: .8;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.ui__phone img {
+  max-width: 200px;
+}
+.ui__tit {
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.ui__sub{
+  text-align: center;
+}
+.ui__txt{
+  padding: 3% 10%;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+.ui__btns{
+  text-align: center;
+  margin-bottom: 5%;
+}
+@media (min-width: 990px) {
+  .ui__phone img {
+    max-width: 298px;
+  }
+  .ui {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .ui--long {
+    margin-top: 15%;
+  }
+  .ui__tit {
+    font-size: 2.5rem;
+  } 
+  .ui__btns{
+    margin-bottom: 0;
+  } 
+}
+
+
+.ui-site {
+  *zoom: 1;
+  padding: 5% 5% 3%;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .ui-site {
+    padding: 40px 10%;
+  }
+}
+.ui-site:after, .ui-site:before {
+  content: "";
+  display: block;
+}
+.ui-site:after {
+  clear: both;
+}
+.ui-site .img {
+  margin: 2% 0;
+  padding: 2px;
+  border: 1px solid #ededed;
+  display: inline-block;
+  max-width: 1800px;
+}
+.ui-site img:first-child {
+  margin-top: 0;
+}
+.ui-site .btn {
+  margin-top: 20px;
+}
+
+.ui-site:first-child {
+  *zoom: 1;
+  padding-bottom: 0;
+}
+.ui-site:first-child:after, .ui-site:first-child:before {
+  content: "";
+  display: block;
+}
+.ui-site:first-child:after {
+  clear: both;
+}
+
+/* arrow
+   ========================================================================== */
+.arrow {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  z-index: 3;
+  display: inline-block;
+  color: #fff;
+  line-height: 40px;
+  padding: 0 10px;
+  position: fixed;
+  top: 10%;
+  background: #3300FF;
+  opacity: .8;
+  -webkit-transition: opacity .3s;
+  -moz-transition: opacity .3s;
+  transition: opacity .3s;
+}
+.arrow--next {
+  right: 0;
+}
+.arrow:hover {
+  opacity: 1;
+}
+
+/**
+ * etmall full site header css setting
+ */
+.header {
+  background: #000;
+  height: 47px;
+  line-height: 47px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: top .4s ease-in-out;
+  z-index: 10000;
+}
+.header_hideUp{
+  top: -47px;
+}
+.header a {
+  font-size: 13px;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 15px;
+  position: relative;
+  opacity: .8;
+}
+@media (min-width: 380px) {
+  .header a {
+    font-size: 15px;
+    font-size: 1.5rem;
+  }
+}
+.header a:hover {
+  opacity: 1;
+}
+.header a.active {
+  opacity: 1;
+  padding: 5px 0px;
+  margin: auto 15px;
+  border-bottom: 1px solid #fff; 
+}
+/**
+ * etmall full site footer css setting
+ */
+.footer {
+  font-size: 11px;
+  font-size: 1.1rem;
+  background: #f3f3f3;
+  color: #555;
+  text-align: center;
+}
+.footer .container{
+  /*background: #fff;*/
+  padding: 20px;
+  margin: 20px auto;
+  display: inline-block;
+}
+@media (min-width: 600px) {
+  .footer .container{
+    background: #fff;
+    margin: 50px auto;
+  }
+}
+
+/* index backdround */
+.f0 {
+  background-image: url(../img/shapes/shapes00000.png);
+}
+.f1 {
+  background-image: url(../img/shapes/shapes00001.png);
+}
+.f2 {
+  background-image: url(../img/shapes/shapes00002.png);
+}
+.f3 {
+  background-image: url(../img/shapes/shapes00003.png);
+}
+.f4 {
+  background-image: url(../img/shapes/shapes00004.png);
+}
+.f5 {
+  background-image: url(../img/shapes/shapes00005.png);
+}
+.f6 {
+  background-image: url(../img/shapes/shapes00006.png);
+}
+.f7 {
+  background-image: url(../img/shapes/shapes00007.png);
+}
+.f8 {
+  background-image: url(../img/shapes/shapes00008.png);
+}
+.f9 {
+  background-image: url(../img/shapes/shapes00009.png);
+}
+.f10 {
+  background-image: url(../img/shapes/shapes00010.png);
+}
+.f11 {
+  background-image: url(../img/shapes/shapes00011.png);
+}
+.f12 {
+  background-image: url(../img/shapes/shapes00012.png);
+}
+.f13 {
+  background-image: url(../img/shapes/shapes00013.png);
+}
+.f14 {
+  background-image: url(../img/shapes/shapes00014.png);
+}
+.f15 {
+  background-image: url(../img/shapes/shapes00015.png);
+}
+.f16 {
+  background-image: url(../img/shapes/shapes00016.png);
+}
+.f17 {
+  background-image: url(../img/shapes/shapes00017.png);
+}
+.f18 {
+  background-image: url(../img/shapes/shapes00018.png);
+}
+.f19 {
+  background-image: url(../img/shapes/shapes00019.png);
+}
+.f20 {
+  background-image: url(../img/shapes/shapes00020.png);
+}
+.f21 {
+  background-image: url(../img/shapes/shapes00021.png);
+}
+.f22 {
+  background-image: url(../img/shapes/shapes00022.png);
+}
+.f23 {
+  background-image: url(../img/shapes/shapes00023.png);
+}
+.f24 {
+  background-image: url(../img/shapes/shapes00024.png);
+}
+.f25 {
+  background-image: url(../img/shapes/shapes00025.png);
+}
+.f26 {
+  background-image: url(../img/shapes/shapes00026.png);
+}
+.f27 {
+  background-image: url(../img/shapes/shapes00027.png);
+}
+.f28 {
+  background-image: url(../img/shapes/shapes00028.png);
+}
+.f29 {
+  background-image: url(../img/shapes/shapes00029.png);
+}
+.f30 {
+  background-image: url(../img/shapes/shapes00030.png);
+}
+.f31 {
+  background-image: url(../img/shapes/shapes00031.png);
+}
+.f32 {
+  background-image: url(../img/shapes/shapes00032.png);
+}
+.f33 {
+  background-image: url(../img/shapes/shapes00033.png);
+}
+.f34 {
+  background-image: url(../img/shapes/shapes00034.png);
+}
+.f35 {
+  background-image: url(../img/shapes/shapes00035.png);
+}
+.f36 {
+  background-image: url(../img/shapes/shapes00036.png);
+}
+.f37 {
+  background-image: url(../img/shapes/shapes00037.png);
+}
+.f38 {
+  background-image: url(../img/shapes/shapes00038.png);
+}
+.f39 {
+  background-image: url(../img/shapes/shapes00039.png);
+}
+.f40 {
+  background-image: url(../img/shapes/shapes00040.png);
+}
+.f41 {
+  background-image: url(../img/shapes/shapes00041.png);
+}
+.f42 {
+  background-image: url(../img/shapes/shapes00042.png);
+}
+.f43 {
+  background-image: url(../img/shapes/shapes00043.png);
+}
+
+.fixed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  opacity : 0.7;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+}
