@@ -241,11 +241,11 @@ ul, ol {
 
 .section {
   *zoom: 1;
-  padding: 10% 2%;
+  padding: 6% 2%;
 }
 @media (min-width: 990px) {
   .section {
-    padding: 4%;
+    padding: 2%;
   }
 }
 section{ 
@@ -353,7 +353,7 @@ main{
  * etmall full site ui css setting
  */
 .ui__desk img, .ui__phone img {
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 .ui__desk img:hover, .ui__phone img:hover {
