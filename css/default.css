@@ -241,7 +241,7 @@ ul, ol {
 
 .section {
   *zoom: 1;
-  padding: 6% 2%;
+  padding: 6% 4%;
 }
 @media (min-width: 990px) {
   .section {
