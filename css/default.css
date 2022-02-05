@@ -304,7 +304,7 @@ main{
 }
 .about__skills{
   max-width: 640px;
-  margin: 0 auto;
+  margin: 0 4%;
 }
 .about__skills li {
   margin-top: 10px;
